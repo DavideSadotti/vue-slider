@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- VUE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vue Hello</title>
+  </head>
+  <body>
+
+    <div id="root">
+      <h1>{{ title }}</h1>
+      <p>{{ text }}</p>
+      <button @click='changeSizeImg'>Cambia Grandezza</button>
+      <img v-bind:src='image' style='display:block;margin-top:30px'>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
